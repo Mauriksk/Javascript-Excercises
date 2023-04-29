@@ -18,7 +18,11 @@ function createXmasTree(height) {
     return arbol
 }
 
-console.log(createXmasTree(40))
+const start = performance.now()
+createXmasTree(100)
+
+const end = performance.now()
+console.log(`Tardó ${end - start} ms`);
 
 
 
